@@ -5,14 +5,16 @@
   <title>Demo - X-Tag</title>
   <script type="text/javascript" src="bower_components/x-tag-core/dist/x-tag-core.js"></script>  <!-- polyfill -->
   <script type="text/javascript" src="bower_components/jquery-2.1.4.min/index.js"></script>
-  <script type="text/javascript" src="camera-init.js"></script>
   <script type="text/javascript" src="my-component.js"></script>
 </head>
 
 <body>
-  <video autoplay ></video>
-  <img src="">
-  <canvas style="display:none;"></canvas>
-  <x-my-component id="my-component"></x-my-component>
+  <x-camera-component id="camera-component"></x-camera-component>
+  <template id="camera-template">
+    <h1>Video </h1>
+    <video autoplay ></video>
+    <img src="">
+    <canvas style="display:none;"></canvas>
+  </template>
 </body>
 </html>
